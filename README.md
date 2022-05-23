@@ -1,14 +1,19 @@
-# Ionosphere-regression-with-pytorch
-Predict extended ionosphere with variable data
+# Ionosphere-TEC-regression-with-pytorch
+### Predict extended ionosphere total electron content with variable data
 
+<img src="https://static.sciencelearn.org.nz/images/images/000/000/248/full/Layers-of-the-ionosphere20150924-22493-1th64qk.jpg?1522293304"/>
 
 # Motivation
-This is an unofficial implementation of paper
+### This is an unofficial implementation of paper
 [Extending Ionospheric Correction Coverage Area By Using A Neural 
 Network Method](http://koreascience.or.kr/article/JAKO201614652759635.page)
 
+### Ionosphere's total electron content make confuse on wireless comunication expecially GPS system
+
+so, It's important to predict ionosphere's total electron content
+
 # Framework used
-Pytorch
+<img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=PyTorch&logoColor=white" height="30px" width="100px"/></a>
 
 # Features
 Using variable 25 type of data, and they have diffent time scale.
@@ -56,8 +61,8 @@ class Regressor(nn.Module):
 ```
 
 # How to use?
-U can do everyting in Ionosphere_regression.ipynb
+You can do everyting in Ionosphere_regression.ipynb
 
 Important thing is changing model architecture
 
-Just set data path at start
+Just set data path at start and make your own deep learning model architecture
