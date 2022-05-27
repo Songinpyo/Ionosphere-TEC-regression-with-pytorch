@@ -8,7 +8,7 @@
 [Extending Ionospheric Correction Coverage Area By Using A Neural 
 Network Method](http://koreascience.or.kr/article/JAKO201614652759635.page)
 
-##### Ionosphere's total electron content make confuse on wireless comunication expecially GPS system
+##### Ionosphere's total electron content make confuse on wireless comunication especially GPS system
 
 so, It's important to predict ionosphere's total electron content
 
@@ -18,7 +18,7 @@ so, It's important to predict ionosphere's total electron content
 # Data Processing
 Using variable 25 type of data, and they have diffent time scale.
 
-### So, U can get two versions of data that one is preprocessed data for same time scale(1), the other is original data(2)
+##### So, U can get two versions of data that one is preprocessed data for same time scale(1), the other is original data(2)
 
 1) Processed data is already interpolated into same time scale. All you have to do is modifying the regression model architecture
 
