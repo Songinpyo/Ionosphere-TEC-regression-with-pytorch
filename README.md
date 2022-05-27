@@ -8,23 +8,25 @@
 [Extending Ionospheric Correction Coverage Area By Using A Neural 
 Network Method](http://koreascience.or.kr/article/JAKO201614652759635.page)
 
-### Ionosphere's total electron content make confuse on wireless comunication expecially GPS system
+##### Ionosphere's total electron content make confuse on wireless comunication expecially GPS system
 
 so, It's important to predict ionosphere's total electron content
 
 # Framework used
 <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=PyTorch&logoColor=white" height="30px" width="100px"/></a>
 
-# Features
+# Data Processing
 Using variable 25 type of data, and they have diffent time scale.
 
-So, U can get two versions of data that one is preprocessed data for same time scale, the other is original data
+### So, U can get two versions of data that one is preprocessed data for same time scale(1), the other is original data(2)
 
-If you want to practice preprocessing data, select original data.
+1) Processed data is already interpolated into same time scale. All you have to do is modifying the regression model architecture
 
-If you want to practice constructing model architecture of regression, select preprocessed data
+2) If you want to practice preprocessing data, select original data. Each data has it's own time scale. So, you have to preprocess the data.
 
 # Example code
+I built basic regression model, so you can easily modify the architecture
+
 ```python
 
 class Regressor(nn.Module):
@@ -61,8 +63,12 @@ class Regressor(nn.Module):
 ```
 
 # How to use?
+
+##### 1) If you choose preprocessed data
 You can do everyting in Ionosphere_regression.ipynb
-
 Important thing is changing model architecture
-
 Just set data path at start and make your own deep learning model architecture
+
+##### 2) If you choose original data
+You have to preprocess the data first, especally you can use interpolation.
+After this all same with case 1)
