@@ -62,6 +62,14 @@ class Regressor(nn.Module):
         
 ```
 
+# Files description
+- Original_data : data before preprocess
+- Preprocessed_data : data files already preprocessed
+- Ionosphere_regresstion.ipynb : Baseline code to construct regression architecture
+- Improved_Ionosphere_regression.ipynb : Modified architecture with my own opininon
+- sample_submission.csv : Excel file to save your prediction
+- submic.csv : Our final output in original scale
+
 # How to use?
 
 ##### 1) If you choose preprocessed data
